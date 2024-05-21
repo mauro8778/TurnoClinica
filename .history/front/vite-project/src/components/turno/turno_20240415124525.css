@@ -1,0 +1,61 @@
+.tarjetas {
+    display: inline-block;
+    width: 200px; 
+    height: 200px; 
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    background-color: transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tarjetas:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.contenidos {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contenidos h4 {
+    margin: 5px 0;
+}
+.animacion {
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+.animacion:hover {
+    background-color: #ccc;
+}
+
+.botons {
+    background-color: transparent; /* Fondo transparente */
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  }
+  
+  .boton:hover {
+    background-color: #ccc; 
+    transform: scale(1.1); 
+    border-radius: 5px;
+  }
+  
+  .rojo {
+    color: red;
+  }
+  
+  .verde {
+    color: green;
+  }

@@ -1,0 +1,23 @@
+.navbar-container {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 100vh; 
+    background-color: rgb(115, 113, 113); 
+    padding: 20px; 
+  }
+  
+ 
+  .navbar-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar-container li {
+    margin-bottom: 10px;
+  }
+  .navbar-container{
+
+    align-items: center;
+  }

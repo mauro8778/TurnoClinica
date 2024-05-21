@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px; /* Ancho del navbar */
+    height: 100vh;
+    background-color: #333; /* Color de fondo del navbar */
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-family: 'Gothic', sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 11rem;
+    width: 60rem;
+  }
+  .container-inicio {
+    display: flex;
+    justify-content: space-between; 
+    width: 80%; 
+  }
+  
+  .especialidades-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .especialidades-list li {
+    margin: 10px;
+    width: calc(100% / 3 - 20px); /* Ajustar el ancho para que quepan tres elementos en una fila */
+  }
+  
+  @media (max-width: 768px) {
+    .especialidades-list li {
+      width: calc(100% / 2 - 20px); /* Ajustar el ancho para que quepan dos elementos en una fila en dispositivos más pequeños */
+    }
+  }
+  

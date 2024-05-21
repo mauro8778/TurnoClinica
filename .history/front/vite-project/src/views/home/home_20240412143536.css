@@ -1,0 +1,27 @@
+body{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  font-size: 3rem; 
+  background-color: white; 
+  color: black; 
+  padding: 10px 20px; 
+  border: 2px solid black; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.container {
+   
+    width: 33%; 
+    float: left; 
+  text-align: center;
+}
+.container-ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.container-li {
+  border-bottom: 1px solid black; 
+  padding: 10px ; 
+}

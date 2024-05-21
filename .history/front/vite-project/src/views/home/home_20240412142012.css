@@ -1,0 +1,12 @@
+body{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  font-size: 3rem; /* Tamaño grande de fuente */
+  background-color: white; /* Fondo blanco */
+  color: black; /* Color de texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: 2px solid black; /* Borde sólido negro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}

@@ -1,0 +1,47 @@
+body{
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  font-size: 3rem; 
+  background-color: white; 
+  color: black; 
+  padding: 10px 20px; 
+  border: 2px solid black; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.container {
+   
+    width: 33%; 
+    float: left; 
+  text-align: center; 
+}
+.container-ul {
+  list-style: none; 
+  padding: 0;
+}
+h3{
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  color: white;
+  font-size: 2rem;
+  margin: 1rem,2rem;
+
+}
+
+.container-li {
+  border: 1px solid black; 
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+  background-color: white;
+  transition: background-color 0.3s ease; 
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-size: 1.5rem;
+  list-style: none; 
+}
+
+.container-li:hover {
+  background: linear-gradient(to bottom, #b3e0ff, #b3b3b3); /* Cambia el fondo al pasar el cursor sobre el elemento */
+}
+

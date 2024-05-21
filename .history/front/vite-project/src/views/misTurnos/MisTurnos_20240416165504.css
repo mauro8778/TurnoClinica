@@ -1,0 +1,65 @@
+.mains-containers {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.formTurnos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.turnero {
+  border: 1px solid black;
+  width: 600px;
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 20px;
+}
+
+.turnero label {
+  margin-bottom: 20px;
+}
+
+.turnero input {
+  margin-bottom: 20px;
+}
+
+.turnero label,
+.turnero input {
+  display: block;
+}
+
+.turnero input[type="text"],
+.turnero input[type="date"],
+.turnero input[type="time"] {
+  width: 100%;
+}
+
+.agendar[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+}
+

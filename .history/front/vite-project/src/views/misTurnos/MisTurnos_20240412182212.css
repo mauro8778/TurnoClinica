@@ -1,0 +1,7 @@
+.container {
+    border: 1px solid white; /* Borde blanco sólido */
+    padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+    margin: 20px; /* Ajusta los márgenes externos según tus necesidades */
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor principal */
+    box-sizing: border-box; /* Incluye el tamaño del borde en el ancho total */
+}

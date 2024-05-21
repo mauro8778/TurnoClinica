@@ -1,0 +1,63 @@
+.mains-containers {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 20px; 
+}
+
+.formTurnos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; /
+}
+
+.turnero {
+  border: 1px solid black;
+  width: 400px; 
+  margin: 20px auto; 
+}
+
+.turnero label {
+  margin-bottom: 10px; 
+}
+
+.turnero input {
+  margin-bottom: 10px;
+}
+
+.turnero label,
+.turnero input {
+  display: block;
+}
+
+.turnero input[type="text"],
+.turnero input[type="date"],
+.turnero input[type="time"] {
+  width: calc(100% - 22px); 
+}
+
+.Agendar[type="submit"] {
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  width: 150px; /* Ancho del botón */
+  height: 40px; /* Alto del botón */
+  display: block; /* Para que el botón se muestre como un bloque y ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centrar horizontalmente */
+  transition: transform 0.2s ease; /* Agregar transición de transformación */
+}
+
+.Agendar[type="submit"]:hover {
+  transform: translateY(-2px); /* Movimiento sutil hacia arriba al hacer hover */
+}
+

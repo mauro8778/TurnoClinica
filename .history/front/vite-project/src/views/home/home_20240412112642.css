@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: calc(100vh - 100px); 
+  }
+  .Conteiner-Inicio{
+    border-radius: 1px black solid;
+    font-family: 'Arial', sans-serif; 
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 20px; 
+    text-align: center; 
+  }
+
+
+h1{
+
+    font-family: 'Arial', sans-serif; 
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px; 
+  text-align: center; 
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey#ffffff;
+  }

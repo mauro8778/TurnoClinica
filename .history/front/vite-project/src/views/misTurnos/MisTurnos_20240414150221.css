@@ -1,0 +1,18 @@
+.mains-container {
+    border: 1px solid white; /* Borde blanco sólido */
+    padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+}
+
+.container {
+    /* Estilos para el contenedor de turnos */
+}
+h1{
+    text-align: center;
+    font-size: 3rem; 
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px; 
+    border: 2px solid black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  

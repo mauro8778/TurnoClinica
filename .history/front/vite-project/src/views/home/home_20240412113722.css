@@ -1,0 +1,33 @@
+
+
+h1{
+
+    font-family: 'Arial', sans-serif; 
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px; 
+  text-align: center; 
+
+}.navbar {
+    width: 100%;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la pantalla */
+  }
+  
+  .centered-container {
+    text-align: center; /* Centra los elementos hijos horizontalmente */
+  }
+  
+  .conteiner-inicio ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+  }
+  
+  .conteiner-inicio li {
+    margin: 10px 0; /* Espacio entre los elementos de la lista */
+  }

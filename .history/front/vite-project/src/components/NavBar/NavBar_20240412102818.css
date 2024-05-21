@@ -1,0 +1,20 @@
+.navbar-container {
+    position: fixed; /* Fija el navbar en la ventana */
+    top: 0; /* Lo posiciona en la parte superior */
+    left: 0; /* Lo posiciona en el margen izquierdo */
+    width: 200px; /* Ancho del navbar */
+    height: 100vh; /* Altura igual al alto de la ventana */
+    background-color: lightblue; /* Color de fondo del navbar */
+    padding: 20px; /* Espaciado interior */
+  }
+  
+  /* Estilos opcionales para los elementos del navbar */
+  .navbar-container ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    padding: 0;
+  }
+  
+  .navbar-container li {
+    margin-bottom: 10px;
+  }
+  

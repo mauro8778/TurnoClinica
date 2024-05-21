@@ -1,0 +1,63 @@
+.tarjetas {
+    display: inline-block;
+    width: 200px; 
+    height: 200px; 
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    background-color: transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tarjetas:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.contenidos {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contenidos h4 {
+    margin: 5px 0;
+}
+.animacions {
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+.animacions:hover {
+    background-color: #ccc;
+}
+
+.botons {
+  position: absolute; /* Permite posicionar el botón dentro del contenedor de la tarjeta */
+  bottom: 10px; /* Ajusta la posición vertical del botón dentro del contenedor */
+  right: 1px; /* Ajusta la posición horizontal del botón dentro del contenedor */
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .botons:hover {
+    background-color: #ccc; 
+    transform: scale(1.1); 
+    border-radius: 5px;
+  }
+  
+  .rojo {
+    color: red;
+  }
+  
+  .verde {
+    color: green;
+  }

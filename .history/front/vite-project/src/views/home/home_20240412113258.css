@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: calc(100vh - 100px); 
+  }
+  .Conteiner-Inicio{
+    border: 1px solid black; 
+    display: flex; /
+  }
+  ul{
+    align-items: center;
+  }
+  li{
+    align-items: center;
+  }
+
+
+h1{
+
+    font-family: 'Arial', sans-serif; 
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px; 
+  text-align: center; 
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey#ffffff;
+  }

@@ -1,0 +1,8 @@
+.especialidades-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .especialidades-list li {
+    margin: 10px;
+  }

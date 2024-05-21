@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+
+
+h1{
+
+    font-family: 'Arial', sans-serif; 
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #000000; 
+  padding: 20px; 
+  border: 2px solid #000000; 
+  border-radius: 10px; 
+  text-align: center; 
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+  }

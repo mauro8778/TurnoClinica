@@ -1,0 +1,187 @@
+import { useState, useEffect } from "react";
+import "../Register/Register.css";
+import { Validate } from "../../helper/validate";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+const Register = () => {
+  const navigate = useNavigate();
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    nDni: "",
+    birthdate: "",
+    username: "",
+    password: ""
+  });
+
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    nDni: "",
+    birthdate: "",
+    username: "",
+    password: ""
+  });
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [usernameError, setUsernameError] = useState("");
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserData({
+      ...userData,
+      [name]: value
+    });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    setFormSubmitted(true);
+
+    // Verificar la unicidad del nombre de usuario antes de enviar el formulario
+    try {
+      const response = await axios.get(`http://localhost:3000/users/check-username/${userData.username}`);
+      if (response.data.exists) {
+        setUsernameError("El nombre de usuario ya está en uso");
+      } else {
+        setUsernameError("");
+        // Continuar con el envío del formulario si el nombre de usuario es único
+        sendForm();
+      }
+    } catch (error) {
+      console.error("Error al verificar el nombre de usuario:", error);
+    }
+  };
+
+  const sendForm = () => {
+    const currentErrors = Validate(userData);
+    setErrors(currentErrors);
+
+    const noErrors = Object.values(currentErrors).every(
+      (error) => error === ""
+    );
+
+    if (noErrors) {
+      axios
+        .post("http://localhost:3000/users/register", userData)
+        .then(() => {
+          alert("Usuario creado, se te enviarán por correo electrónico las credenciales");
+          setFormSubmitted(false);
+          setUserData({
+            name: "",
+            email: "",
+            nDni: "",
+            birthdate: "",
+            username: "",
+            password: ""
+          });
+          setErrors({
+            name: "",
+            email: "",
+            nDni: "",
+            birthdate: "",
+            username: "",
+            password: ""
+          });
+          navigate("/");
+        })
+        .catch((error) => {
+          console.error("Error al enviar los datos:", error);
+        });
+    }
+  };
+
+  return (
+    <>
+      <div className="tarjeta">
+        <div className="contenido">
+          <h2>Formulario de Registro</h2>
+          <form onSubmit={handleFormSubmit}>
+            <label htmlFor="name">
+              Nombre y apellido:
+              <input
+                type="text"
+                value={userData.name}
+                name="name"
+                placeholder="Colocar tu nombre..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.name}</p>}
+
+            <label htmlFor="email">
+              Email:
+              <input
+                type="text"
+                value={userData.email}
+                name="email"
+                placeholder="Colocar tu email..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.email}</p>}
+
+            <label htmlFor="nDni">
+              Numero de DNI:
+              <input
+                type="text"
+                value={userData.nDni}
+                name="nDni"
+                placeholder="Colocar tu dni..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.nDni}</p>}
+
+            <label htmlFor="birthdate">
+              Fecha de Nacimiento:
+              <input
+                type="date"
+                value={userData.birthdate}
+                name="birthdate"
+                placeholder="Colocar tu Fecha de Nacimiento..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.birthdate}</p>}
+
+            <label htmlFor="username">
+              Usuario:
+              <input
+                type="text"
+                value={userData.username}
+                name="username"
+                placeholder="Colocar tu Usuario..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.username}</p>}
+            {usernameError && <p className="error">{usernameError}</p>}
+
+            <label htmlFor="password">
+              Contraseña:
+              <input
+                type="password"
+                value={userData.password}
+                name="password"
+                placeholder="Colocar tu Contraseña..."
+                onChange={handleInputChange}
+              />
+            </label>
+            {formSubmitted && <p className="error">{errors.password}</p>}
+
+            <button type="submit">Enviar</button>
+            
+            <button><Link to="/">Volver</Link></button>
+  
+         
+          </form>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Register;

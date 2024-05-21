@@ -1,0 +1,14 @@
+.NavBar {
+    background-color: #f5f8fb;
+    color: black;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 100vh; 
+    list-style-type: none; 
+    padding: 0;
+    margin-bottom: 10px;
+    
+  }

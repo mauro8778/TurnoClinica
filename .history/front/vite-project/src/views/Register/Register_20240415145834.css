@@ -1,0 +1,94 @@
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 800px; 
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    background-color: transparent;
+    top: 25%; 
+  left: 25%;
+  
+  }
+  
+  
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contenido h2 {
+    text-align: center;
+  font-size: 3rem; 
+  color: black; 
+  padding: 10px 20px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 200px;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  label{
+    text-align: center;
+    font-size: 1.5rem; 
+    color: black; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+  
+  }
+  input:focus {
+    border-bottom-color: black;
+  }
+  .error {
+    color: red;
+    height: 1.5rem; 
+    margin-bottom: 1rem;
+  }
+  
+  .contenido label {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el texto y el input */
+    align-items: center; /* Alinea verticalmente */
+    width: 50%;
+    margin-bottom: 10px; /* Espacio entre cada label e input */
+  }
+  
+  .contenido label input {
+    width: calc(100% - 150px); /* Toma el 100% del ancho menos 150px para dejar espacio para el texto */
+    padding: 8px;
+  }
+  
+  /* Establece un ancho fijo para el texto del label */
+  .contenido label span {
+    width: 150px; /* Ancho fijo para el texto del label */
+    text-align: right; /* Alinea el texto del label a la derecha */
+    padding-right: 20px; /* Espacio entre el texto y el input */
+  }

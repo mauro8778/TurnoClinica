@@ -1,0 +1,64 @@
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 500px; 
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contenido h2 {
+    color: black;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+  input:focus {
+    border-bottom-color: black;
+  }
+  .error{
+color: red;
+
+  }
+  .contenido label input {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 4px;
+  }

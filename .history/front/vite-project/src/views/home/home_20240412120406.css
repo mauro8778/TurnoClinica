@@ -1,0 +1,46 @@
+.navbar {
+    width: 100%;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 80px); 
+  }
+  
+  h1 {
+    font-family: 'Gothic', sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .container-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  .container-inicio ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container-inicio ul li {
+    width: calc(33.33% - 20px); /* Para tres elementos en una fila */
+    margin: 10px; /* Espacio entre los elementos */
+  }
+  
+  /* Media query para ajustar el tamaño de los elementos en pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .container-inicio ul li {
+      width: calc(50% - 20px); /* Para dos elementos en una fila en pantallas pequeñas */
+    }
+  }
+  
+  

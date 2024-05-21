@@ -1,0 +1,27 @@
+.container {
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical del h1 */
+  align-items: center; /* Centrado horizontal del h1 */
+  }
+  .app-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+h1{
+
+    font-family: 'Arial', sans-serif; 
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 20px; 
+  text-align: center; 
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: grey#ffffff;
+  }

@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic', sans-serif; /* Cambia la fuente a una gótica */
+  }
+  
+  .navbar {
+    width: 100%;
+    border: 2px solid black; /* Agrega borde sólido negro */
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    height: 100vh;
+  }
+  
+  .centered-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Tamaño grande */
+    color: white; /* Color del texto blanco */
+    border: 2px solid black; /* Borde sólido negro */
+    padding: 20px; /* Añade un relleno */
+  }
+  
+  .conteiner-inicio ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .conteiner-inicio li {
+    margin: 10px 0;
+  }

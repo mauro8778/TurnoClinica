@@ -1,0 +1,73 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 800px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  border-right: 1px solid #ccc;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Agregamos un padding para mantener uniformidad con la columna izquierda */
+}
+
+.right-column h2 {
+  margin-bottom: 20px; /* Agregamos un margen inferior al título */
+}
+
+.form-container {
+  width: 100%; /* Cambiamos el ancho al 100% para que el formulario ocupe todo el espacio disponible */
+  max-width: 400px;
+  text-align: center;
+}
+
+.input-container {
+  width: 100%; /* Cambiamos el ancho al 100% para que los elementos se expandan horizontalmente */
+  margin-bottom: 20px;
+  text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+.error {
+  color: red;
+  text-align: center; /* Alineamos el texto de error al centro */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Cambiamos el ancho al 100% para que los elementos se expandan horizontalmente */
+}
+
+button,
+.register-link {
+  border: 1px solid #333;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+}
+
+button:hover,
+.register-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
