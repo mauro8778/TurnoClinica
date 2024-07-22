@@ -49,7 +49,7 @@ const CrearTurnos = ({ userId, setUserTurnos }) => {
 
         try {
             setError('');
-            const response = await axios.post('http://localhost:3000/appoiment/agendar', {
+            const response = await axios.post('http://localhost:3001/appoiment/agendar', {
                 ...formData,
                 userId: userId
             });

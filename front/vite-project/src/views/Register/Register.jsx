@@ -53,7 +53,7 @@ const Register = () => {
 
       if (noErrors) {
         axios
-          .post("http://localhost:3000/users/register", userData)
+          .post("http://localhost:3001/users/register", userData)
           .then(() => {
             alert("usuario creado con exito, recibira un correo con las credenciales");
             setFormSubmitted(false);
